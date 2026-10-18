@@ -571,7 +571,7 @@
 </article>
 </main>
 <script>
-  function gemeld(knop, tekst) { var s = knop.parentNode.querySelector(".gemeld") || knop.parentNode.parentNode.querySelector(".gemeld"); if (s) s.textContent = tekst; }
+  function gemeld(knop, tekst) { var s = knop.closest("article").querySelector(".gemeld"); s.textContent = tekst; }
   document.querySelectorAll("button[data-kopieer]").forEach(function (knop) {
     knop.addEventListener("click", function () {
       var el = document.getElementById(knop.dataset.kopieer);
