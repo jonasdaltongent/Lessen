@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" href="icoon.png">
 <link rel="apple-touch-icon" href="icoon.png">
 <style>
-  :root { --navy:#3C51A0; --navy-deep:#2A3973; --peri-soft:#E4E8F6; --sand:#EDECE4; --ink:#1D2340; --muted:#4D5573; }
+  :root { --navy:#3C51A0; --navy-deep:#2A3973; --peri-soft:#E4E8F6; --sand:#EDECE4; --ink:#1D2340; --muted:#4D5573; --oranje:#D9822B; --oranje-deep:#8A4A0B; --oranje-soft:#FDF0DF; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--sand); color: var(--ink); font-family: system-ui, "Segoe UI", Arial, sans-serif; }
   main { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px; min-height: 100vh; align-items: start; }
@@ -27,6 +27,13 @@
   .punten span { margin-right: 4px; }
   .punten a { padding: 5px 12px; border: 2px solid var(--navy); border-radius: 999px; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--navy-deep); background: #fff; }
   .punten a:hover, .punten a:focus-visible { background: var(--peri-soft); outline: none; }
+  .punten a.open, .beslis a.open { border-color: var(--oranje); color: var(--oranje-deep); background: var(--oranje-soft); }
+  .punten a i, .beslis a i { display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 50%; background: var(--oranje); vertical-align: 1px; }
+  .beslis { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px 20px; background: #fff; border: 2px solid #D6D5CB; border-radius: 16px; }
+  .beslis b { font-size: 16px; }
+  .beslis span { color: var(--muted); font-size: 14px; }
+  .beslis a { margin-left: auto; padding: 8px 16px; border: 2px solid var(--navy); border-radius: 999px; font-weight: 700; text-decoration: none; color: var(--navy-deep); background: #fff; }
+  .beslis a:hover, .beslis a:focus-visible { outline: 3px solid var(--navy-deep); outline-offset: 1px; }
   .meer { display: block; width: 100%; padding: 12px; border: 0; border-top: 1px solid #E3E2D8; background: #fff; color: var(--muted); font: inherit; font-size: 14px; cursor: pointer; }
   .meer:hover, .meer:focus-visible { background: var(--peri-soft); color: var(--navy-deep); }
   .oud[hidden] { display: none; }
@@ -36,13 +43,15 @@
 </head>
 <body>
 <main>
+<div class="beslis"><b>Beslissingen verbeteren</b><span>5 vragen voor 9 leerlingen wachten op jouw keuze · stand van 06-11</span><a class="open" href="https://claude.ai/artifact/JJAM1Xdd47JYRq3XC5mn1d"><i aria-hidden="true"></i>Beslissen</a></div>
+
 <section>
   <h1>3MWb</h1>
   <div class="les"><b>Les 5 · Wat mag je delen?</b><span>W9</span>
     <div class="links"><a href="https://jonasdaltongent.github.io/Privacy-Speelboom/presentatie.html">Dia's</a><a href="https://jonasdaltongent.github.io/Privacy-Speelboom/">Les</a><a href="https://docs.google.com/document/d/1H4NREU2NJr_R7hpbFSQxDmsbKuTTF2_LZpOUs3LyGRc/edit" title="Privacyprotocol">Werkdocument</a><a href="smartschool.html#w09-les-05-mw-wat-mag-je-delen">Fiche</a></div></div>
   <div class="les"><b>Les 4 · Berichten aan ouders</b><span>W8</span>
     <div class="links"><a href="https://jonasdaltongent.github.io/Ouderbericht-Speelboom/presentatie.html">Dia's</a><a href="https://jonasdaltongent.github.io/Ouderbericht-Speelboom/">Les</a><a href="https://docs.google.com/document/d/1e1vynsYtZCtOFWoJb7iNHsCMslkDMSO4ygjKa0_GnW4/edit" title="Ouderbericht">Werkdocument</a><a href="smartschool.html#w08-les-04-mw-berichten-aan-ouders">Fiche</a></div>
-    <div class="punten"><span>Punten</span><a href="https://docs.google.com/document/d/1JqHSfO1a1q1hnluG9tFw7xxSh-XYzY8BBwxfDD2I5o0/edit?usp=drivesdk" title="Verslag van het verbeteren, 3MWb">3MWb</a></div></div>
+    <div class="punten"><span>Punten</span><a href="https://docs.google.com/document/d/1JqHSfO1a1q1hnluG9tFw7xxSh-XYzY8BBwxfDD2I5o0/edit?usp=drivesdk" title="Verslag van het verbeteren, 3MWb">3MWb</a><a class="open" href="https://claude.ai/artifact/JJAM1Xdd47JYRq3XC5mn1d" title="Nog te beslissen op de beslissingenpagina"><i aria-hidden="true"></i>2 vragen</a></div></div>
   <div class="les"><b>Les 3 · Professionele e-mail aan een stageplaats</b><span>W7</span>
     <div class="links"><a href="https://jonasdaltongent.github.io/Stagemail-Speelboom/presentatie.html">Dia's</a><a href="https://jonasdaltongent.github.io/Stagemail-Speelboom/">Les</a><a href="https://docs.google.com/document/d/1u3-rnDu_RVT4MuNkgkEe928FRyP67TaIxH9EWKB2QBQ/edit" title="Stagemail">Werkdocument</a><a href="smartschool.html#w07-les-03-mw-professionele-e-mail-aan-een-stageplaats">Fiche</a></div>
     <div class="punten"><span>Punten</span><a href="https://docs.google.com/document/d/1EKXQBWlL1vYpqNEnF5UuuDK8TRCFabY4eVI_qhMo2Rg/edit?usp=drivesdk" title="Verslag van het verbeteren, 3MWb">3MWb</a></div></div>
@@ -69,7 +78,7 @@
     <div class="links"><a href="https://jonasdaltongent.github.io/Phishing-NovaDepot/presentatie.html">Dia's</a><a href="https://jonasdaltongent.github.io/Phishing-NovaDepot/">Les</a><a href="https://docs.google.com/document/d/1sYAE4_FUJDialYCNOy5SpRf3pkWyamuuZuKYv5G62fo/edit" title="CO3_Phishing-of-echt">Werkdocument</a><a href="smartschool.html#w09-les-13-orlo-phishing-of-echt">Fiche</a></div></div>
   <div class="les"><b>Les 12 · Communicatie 2 – Aan, CC, BCC en een bijlage</b><span>W9</span>
     <div class="links"><a href="https://jonasdaltongent.github.io/Groepsmail-NovaDepot/presentatie.html">Dia's</a><a href="https://jonasdaltongent.github.io/Groepsmail-NovaDepot/">Les</a><a href="https://docs.google.com/document/d/1NuprpYFyfwpjxgmFNlziLjCE0r6EbGH5UciyBPonl60/edit" title="CO2_Aan-CC-BCC-en-een-bijlage">Werkdocument</a><a href="smartschool.html#w09-les-12-orlo-aan-cc-bcc-en-een-bijlage">Fiche</a></div>
-    <div class="punten"><span>Punten</span><a href="https://docs.google.com/document/d/1j_TrAhbF9DBFvkdBek3ecnhNcPq52ZfYsFqMen3dIu4/edit?usp=drivesdk" title="Verslag van het verbeteren, 3ORLO">3ORLO</a><a href="https://docs.google.com/document/d/11aWj06I5mOgIsQW6Snl7Bue1AVFwIAHccRzXDkdZbv8/edit?usp=drivesdk" title="Verslag van het verbeteren, 4ORLOa">4ORLOa</a><a href="https://docs.google.com/document/d/1urB2Vpk6QOJ62WEaIQsdf0_UKyQQTDJSYIVuy043JYg/edit?usp=drivesdk" title="Verslag van het verbeteren, 4ORLOb">4ORLOb</a></div></div>
+    <div class="punten"><span>Punten</span><a href="https://docs.google.com/document/d/1j_TrAhbF9DBFvkdBek3ecnhNcPq52ZfYsFqMen3dIu4/edit?usp=drivesdk" title="Verslag van het verbeteren, 3ORLO">3ORLO</a><a href="https://docs.google.com/document/d/11aWj06I5mOgIsQW6Snl7Bue1AVFwIAHccRzXDkdZbv8/edit?usp=drivesdk" title="Verslag van het verbeteren, 4ORLOa">4ORLOa</a><a href="https://docs.google.com/document/d/1urB2Vpk6QOJ62WEaIQsdf0_UKyQQTDJSYIVuy043JYg/edit?usp=drivesdk" title="Verslag van het verbeteren, 4ORLOb">4ORLOb</a><a class="open" href="https://claude.ai/artifact/JJAM1Xdd47JYRq3XC5mn1d" title="Nog te beslissen op de beslissingenpagina"><i aria-hidden="true"></i>3 vragen</a></div></div>
   <div class="les"><b>Les 11 · Communicatie 1 – De zakelijke e-mail</b><span>W8</span>
     <div class="links"><a href="https://jonasdaltongent.github.io/Mail-NovaDepot/presentatie.html">Dia's</a><a href="https://jonasdaltongent.github.io/Mail-NovaDepot/">Les</a><a href="https://docs.google.com/document/d/1J27JcD3VJjM6dgHZ1EhH8WEJ9cYMkmQIh0SWYeTF6Ig/edit" title="CO1_De-zakelijke-e-mail">Werkdocument</a><a href="smartschool.html#w08-les-11-orlo-de-zakelijke-e-mail">Fiche</a></div>
     <div class="punten"><span>Punten</span><a href="https://docs.google.com/document/d/1o0K7NiGlY7ULh2iGewiafJPLqHm_NT9oG8C_q4ZqmeI/edit?usp=drivesdk" title="Verslag van het verbeteren, 3ORLO">3ORLO</a><a href="https://docs.google.com/document/d/1y6vEW7PeiQQ5_9jnLD0uQEzPCPLC1Rkeqyt9wvi8zaQ/edit?usp=drivesdk" title="Verslag van het verbeteren, 4ORLOa">4ORLOa</a><a href="https://docs.google.com/document/d/1QPRLj_GSimk-xUAYvbbAVsHkFyq8aIk9HKdvxpeyIkk/edit?usp=drivesdk" title="Verslag van het verbeteren, 4ORLOb">4ORLOb</a></div></div>
